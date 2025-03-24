@@ -13,8 +13,7 @@ namespace Loop
 
         public static void Main(String[] args)
         {
-            int reqLen = 11;
-            
+                       
             Luger();
 
         }
@@ -69,7 +68,7 @@ namespace Loop
             reader2.Close();
 
 
-
+            int reqLen = 11;
 
             //uus list vastuste jaoks
             List<string> vastused = new List<string>();
@@ -78,7 +77,7 @@ namespace Loop
             {
                 for (int o = 0; o < ends.Count; o++)
                 {
-                    if ((starts[i] + ends[o]).Length == 11)
+                    if ((starts[i] + ends[o]).Length == reqLen)
                     {
                         vastused.Add(starts[i] + ends[o]);
                     }
